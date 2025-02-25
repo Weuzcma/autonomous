@@ -2,7 +2,7 @@
     This class illustrates my simplified Odometry Strategy.
     It implements basic straight line motions but with heading and drift controls to limit drift.
   /*
-  package org.firstthinking.frc
+   package org.first.thinkingfrc.team2train
    // Drive a large rectangle, turning at each corner
 TrajectorySequence trajectory0 = drive.trajectorySequenceBuilder(new Pose2d(-39.96, -56.69, Math.toRadians(90.00)))
 .splineTo(new Vector2d(-39.96, 46.37), Math.toRadians(90.00))
