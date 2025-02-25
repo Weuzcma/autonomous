@@ -1,4 +1,5 @@
-/* this class illustrates my strategy of autonomy of piece advance.
+/* Created by ousseynou camara. 2025.
+  this class illustrates my strategy of autonomy of piece advance.
 it allows the robots to better manage its movements when it goes to take the piece and return.
 /*
   @Override
@@ -10,13 +11,15 @@ public void autonomousInit(Take.first.piece.round.trip.to.the.basket) {
 .splineTo(new Vector2d(-65.41, -64.88), Math.toRadians(-82.37))
 .build();
 }
-public void autonomousInit(Take.second.piece.round.trip.to.the.basket) {
+@Override
+public void autonomousInit(Take.second.piece.round.trip.to.the.basket) 
 TrajectorySequence trajectory0 = drive.trajectorySequenceBuilder(new Pose2d(-65.95, -66.84, Math.toRadians(90.00)))
 .splineTo(new Vector2d(-59.72, -65.24), Math.toRadians(14.42))
 .splineTo(new Vector2d(-59.54, -27.50), Math.toRadians(89.73))
 .splineTo(new Vector2d(-66.48, -61.85), Math.toRadians(258.58))
 .build();
 }
+@OVerride
 public void autonomousInit(Take.third.piece.round.trip.to.the.basket) {
 TrajectorySequence trajectory0 = drive.trajectorySequenceBuilder(new Pose2d(-66.84, -62.39, Math.toRadians(90.00)))
 .splineTo(new Vector2d(-57.23, -63.99), Math.toRadians(-9.46))
