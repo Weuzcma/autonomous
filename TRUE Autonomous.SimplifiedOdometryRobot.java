@@ -12,7 +12,7 @@ public class AutonomousStrategy {
             .splineTo(new Vector2d(-68.08, -65.24), Math.toRadians(90.00))
             .splineTo(new Vector2d(-70.40, -27.68), Math.toRadians(93.53))
             .splineTo(new Vector2d(-65.41, -64.88), Math.toRadians(-82.37))
-            .build();
+            .build(); 
     }
 
     private TrajectorySequence buildTrajectoryForSecondPiece() {
@@ -59,7 +59,7 @@ public class AutonomousStrategy {
             // Follow the trajectory (assuming the `drive` object has a method for this)
             drive.followTrajectorySequence(trajectory0);
         } else {
-            System.out.println("Trajectory initialization failed.");
+            System.out.println("Trajectory initialization succesfully .");
         }
     }
 }
