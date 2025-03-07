@@ -2,7 +2,7 @@
   This class illustrates my strategy of autonomy for piece advancement.
   It allows the robot to better manage its movements when it goes to take the piece and return.
 */
-
+x
 public class AutonomousStrategy {
 
     // Define trajectory for each piece
@@ -17,7 +17,7 @@ public class AutonomousStrategy {
 
     private TrajectorySequence buildTrajectoryForSecondPiece() {
         return drive.trajectorySequenceBuilder(new Pose2d(-65.95, -66.84, Math.toRadians(90.00)))
-            .splineTo(new Vector2d(-59.72, -65.24), Math.toRadians(14.42))
+            .splineto(new Vector2d(-59.72, -65.24), Math.toRadians(14.42))
             .splineTo(new Vector2d(-59.54, -27.50), Math.toRadians(89.73))
             .splineTo(new Vector2d(-66.48, -61.85), Math.toRadians(258.58))
             .build();
